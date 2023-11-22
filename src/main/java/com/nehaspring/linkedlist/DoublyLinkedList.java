@@ -22,7 +22,6 @@ public class DoublyLinkedList<T> {
 
 	public DoublyLinkedList() {
 		this.headNode = null;
-		this.tailNode = null;
 		this.size = 0;
 	}
 	
