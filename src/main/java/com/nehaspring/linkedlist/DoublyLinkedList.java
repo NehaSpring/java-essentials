@@ -54,6 +54,7 @@ public class DoublyLinkedList<T> {
      * Here New Node will become the Head node.
      * If Head node is not empty then new Node becomes its previous node 
      * And whatever there in the Head node becomes the next node of the new Node
+     * <strong> Don't forget to increase the size</strong>
      */
 	public void insertFirst(T data) {
 		
@@ -66,6 +67,7 @@ public class DoublyLinkedList<T> {
 			headNode.previousNode = newNode;
 		}
 		this.headNode = newNode;
+		size++;
 	}
 	
 	/**
@@ -73,6 +75,7 @@ public class DoublyLinkedList<T> {
      * Using While loop go till end of the list
      * New Node becomes the next node at last. And last Node become previous of new Node.
      * <strong>New Node will point to null</strong>.
+     * <strong> Don't forget to increase the size</strong>
      */
 	public void insertLast(T data) {
 		
@@ -91,6 +94,7 @@ public class DoublyLinkedList<T> {
 		newNode.previousNode = tempNode;
 		tempNode.nextNode = newNode;
 		newNode.nextNode = null;
+		size++;
 	}
 	
 	/**
@@ -158,7 +162,6 @@ public class DoublyLinkedList<T> {
 		if(!found) {
 			throw new NoSuchElementException();
 		}
-	
 		
 	}
 }
