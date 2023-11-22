@@ -11,7 +11,6 @@ public class DoublyLinkedList<T> {
      * Class member variables 
      */
 	public Node<T> headNode;
-	public Node<T> tailNode;
 	public int size;
 	
 	//Inner class Node
