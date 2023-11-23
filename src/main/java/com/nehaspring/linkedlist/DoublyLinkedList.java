@@ -14,7 +14,7 @@ public class DoublyLinkedList<T> {
 	public int size;
 	
 	//Inner class Node
-	private static class Node<T>{
+	public static class Node<T>{
 		T data;
 		Node<T> nextNode;
 		Node<T> previousNode;
@@ -136,7 +136,7 @@ public class DoublyLinkedList<T> {
      * Deletes node which has provided value
      * Traverse till you find the Element in the list.
      * <strong> Don't forget to decrease the size</strong>
-     * Throws Runtime Exception NoSuchElementException() if element is not found
+     * @throws NoSuchElementException() if element is not found
      */
 	public void deleteByValue(T data) {
 		if(isEmpty()) {
